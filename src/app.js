@@ -9,4 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const inputView = new InputView();
   inputView.bindEvents();
 
+  const wordCounter = new WordCounter();
+  wordCounter.bindEvents();
+
+  const resultView = new ResultView();
+  resultView.bindEvents();
+
 });

@@ -10,7 +10,7 @@ InputView.prototype.bindEvents = function () {
   input.addEventListener('submit', (event) => {
     const inputtedWord = event.target.text.value;
     console.log(inputtedWord);
-    PubSub.publish('InputView:word-inputted', inputtedWord)
+    PubSub.publish('InputView:inputted-word', inputtedWord)
     event.preventDefault();
   })
 
